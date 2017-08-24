@@ -6,7 +6,7 @@ button.addEventListener('click', function(){
   });
 
 var paragraph = document.getElementById('joke');
-paragraph.addEventListener('load', getJoke());
+document.addEventListener('DOMContentLoaded', getJoke); //pokazuje na start dżołk o Czaku
 
 function getJoke() {
     var xhr = new XMLHttpRequest();
@@ -19,4 +19,4 @@ function getJoke() {
         xhr.send();
 };
 
-// window.onload = getJoke();
+ //getJoke(); - tym też możemy na start, bez klikania w przycisk, pokazać kawał o Norrisie
